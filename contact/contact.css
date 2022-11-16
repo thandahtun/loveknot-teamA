@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh; 
+}
+
+/* nav {
+    width: 100%;
+    height: 75px;
+    background-color: burlywood;
+} */
+
+.body {
+    width: 100%;
+    height: 100%;
+    margin-top: 75px;
+    background-image: url('img/contact1.jpg');
+    background-repeat: no-repeat;
+    background-position: top;  
+    background-size: cover; 
+}
+
+.bgimg {
+    width: 100%;
+    height: 40%;
+   
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;   
+}
+
+.bgimg h1 {
+    margin-left: 50px;
+    letter-spacing: 1px;
+
+    color: white;
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact { 
+    width: 100%;
+    height: 55%;
+    /* background-color: #ff87ef; */
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+} 
+
+form {
+    width: 30%;
+    height: 100%;
+    /* background-color: skyblue; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+
+    text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
+    font-weight: 400px;
+}
+
+input ,textarea #submit{
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+
+label {
+    font-size: 1.1rem;
+}
+
+
+form .name, .subject{
+    /* text-align: center; */
+    width: 100%;
+    height: 350px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.name div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.subject div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+select {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+form .massage {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 10px 0; */
+}
+
+textarea  {
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    /* text-align: center; */
+    /* padding: 100px; */
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    background-color: #ff87ef;
+    margin: 10px 0;
+}
+
+.contact .text {
+    width: 35%;
+    height: 350px;
+    /* background-color: aqua; */
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+}
+
+.text .helpcenter {
+    width: 100%;
+    height: 350px;
+    /* background-color: #FFd1d1; */
+    color: white;
+    text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
+    font-weight: 400px;
+}
+
+.helpcenter h1 {
+    font-size: 2rem;
+    margin: 0px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.helpcenter p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.helpcenter a {
+    /* text-decoration: none; */
+    font-weight: bold;
+    text-shadow: none;
+    color: white;
+}
+
+.helpcenter a:hover {
+    color: pink;
+}
+
+.helpcenter p i {
+    color: #ff87ef;
+}
+
+.text .icons {
+    width: 50%;
+    height: 50px;
+    /* background-color: #FFF5E4; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.icons i {
+    font-size: 50px;
+}
+
+
+
+.fa-square-facebook  {
+    color:   #3b5998;
+}
+
+.fa-square-twitter {
+    color: #00acee;
+}
+
+.icon .fa-instagram {
+    font-size: 44px;
+    color: white;
+    padding: 1px;
+
+    background-image: url('img/inst.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500%;
+
+    border-radius: 3px;
+}
+
+.fa-linkedin {
+    color: #0072b1 ;
+}
+

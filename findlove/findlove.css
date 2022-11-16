@@ -1,0 +1,394 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior:smooth;
+}
+
+body{
+	height: 100vh;
+	background-color: #ff87ef;
+}
+
+#findlove{
+	width: 100%;
+	height: 100%;
+
+	margin-top: 75px;
+}
+
+.search{
+	width: 100%;
+	height: 50px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.search h1{
+	color: #C85250;
+	font-weight: 3px;
+	letter-spacing: 2px;
+	font-size: 2rem;
+}
+
+.search .input{
+	width: 300px;
+	height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.search .input input{
+	font-size:1.3rem;
+	width: 300px;
+	height: 30px;
+	border-radius: 20px;
+	border-width: thin;
+	background-color: #fff9cf;
+}
+
+.search .input a{
+	transition: all 0.2s;
+}
+
+.search .input a:hover{
+	color: darkcyan;
+}
+
+.find{
+	width: 100%;
+	height: 100%;
+	
+	margin-top: 10px;	
+}
+
+.find .find1{
+	width: 100%;
+	height: 400px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	margin-bottom: 10px;
+}
+
+
+.find .find1 .gender{
+	width: 400px;
+	height: 400px;
+	background-image: url(imgfindlove/genderbgimg.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 30px;
+	margin-left: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	transition: all 0.2s;
+}
+
+.find .find1 .gender:hover{
+	transform: translateY(-10px);
+}
+
+.find .find1 .gender h3{
+	font-size: 2rem;
+	font-weight: 1px;
+	letter-spacing: 2px;
+	color: #40373f;
+}
+
+.find .find1 .gender .gendera{
+	width: 100%;
+	height: 50px;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.find .find1 .gender .gendera a{
+	color: #40373f;
+	font-weight: 3px;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color: #faf2b4;
+	transition: all 0.2s;
+}
+
+.find .find1 .gender .gendera a:hover{
+	color: #0292f2;
+	background-color:#ff87ef;
+}
+
+.find .find1 .nearby{
+	width: 400px;
+	height: 400px;
+	/*background-color: #fcdcfb;*/
+	background-image: url(imgfindlove/heartnear.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 30px;
+	margin-right: 20px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.2s;
+}
+
+.find .find1 .nearby:hover{
+	transform: translateY(-10px);
+}
+
+.find .find1 .nearby h3{
+	font-size: 2rem;
+	font-weight: 2px;
+	letter-spacing: 2px;
+	color: #40373f;
+}
+
+.find .find1 .nearby p{
+	font-size: 1.5rem;
+	font-weight: 2px;
+	letter-spacing: 2px;
+}
+
+.find1 .nearby .nearbyradio{
+	width: 100%;
+	height: 30px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find1 .nearby .nearbyradio .radiow{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find1 .nearby .nearbyradio .radiom{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find1 .nearby .nearbyradio .radioe{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find1 .nearby img{
+	width: 80px;
+	height: 80px;
+	border-radius: 30px;
+}
+
+.find .find2{
+	width: 100%;
+	height: 400px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	margin-top: 10px;
+}
+
+
+.find .find2 .interest{
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	background-image: url(imgfindlove/share1.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 30px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.2s;
+}
+
+.find .find2 .interest:hover{
+	transform: translateY(-10px);
+}
+
+.find .find2 .interest a{
+	color: #40373f;
+	font-size: 1.5rem;
+	font-weight: 3px;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color: #faf2b4;
+	transition: all 0.2s;
+}
+
+.find .find2 .interest a:hover{
+	color: #0292f2;
+	background-color:#ff87ef;
+}
+
+.find .find2 .interest p{
+	font-size: 2rem;
+	font-weight: 5px;
+	letter-spacing: 2px;
+}
+
+.find .find2 .interest .interradio{
+	width: 100%;
+	height: 30px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .interest .interradio .radiow{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .interest .interradio .radiom{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .interest .interradio .radioe{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+.find .find2 .age{
+	width: 400px;
+	height: 400px;
+	background-color: #fcdcfb;
+	background-image: url(imgfindlove/share2.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 30px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.2s;
+}
+
+.find .find2 .age:hover{
+	transform: translateY(-10px);
+}
+
+.find .find2 .age p{
+	font-size: 2rem;
+	font-weight: 4px;
+	letter-spacing: 2px;
+}
+
+.find .find2 .age .ageradio{
+	width: 100%;
+	height: 30px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .age .ageradio .radiow{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .age .ageradio .radiom{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .age .ageradio .radioe{
+	width: 100px;
+	height: 30px;
+	font-size: 1.2rem;
+	background-color: #faf2b4;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.find .find2 .age a{
+	color: #40373f;
+	font-size: 1.5rem;
+	font-weight: 3px;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color: #faf2b4;
+	transition: all 0.2s;
+}
+
+.find .find2 .age a:hover{
+	color: #0292f2;
+	background-color:#ff87ef;
+}

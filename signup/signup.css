@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@700&family=Croissant+One&family=Monofett&family=Suranna&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.st{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(34DEG, hsl(300, 85%, 60%),skyblue);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.databox{
+    width: 600px;
+    height: 100%;
+    background: linear-gradient(90deg,#fdd2e0,#f698b7);
+    border-radius: 35px;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.databox .head{
+    width: 50%;
+    height: 80px;
+    font-family: 'Cinzel Decorative', cursive; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 160px;
+}
+
+.head img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.head p{
+    font-size: 1.8rem;
+    color: #d61e4f;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.rname, .ga, p{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.fname{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.data, ol{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 75px;
+}
+
+.all, .displayname{
+    width: 40%;
+    height: 100%;
+}
+
+.all, .displayname label{
+    font-size: 1rem;
+    color: red;
+    font-family: 'Croissant One', cursive;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+}
+
+input, option, select{
+    width: 250px;
+    height: 40px;
+    font-family: 'Croissant One', cursive;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #fc034590;
+    border-bottom-width: 3px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    margin: 10px 0px;
+}
+
+select:hover{
+    background-color: black;
+    border-color: #f68cad;
+    color: #f51954;
+}
+select:placeholder{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Croissant One', cursive;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: black;
+}
+
+input:hover{
+    background-color: black;
+    border-color: #f68cad;
+    color: #f51954;
+}
+input:placeholder{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Croissant One', cursive;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.ga .all select option:hover{
+    background-color: black;
+    border-color: #f68cad;
+    color: #f51954;
+}
+.ga .all select option:placeholder{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Croissant One', cursive;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.rg{
+    width: 500px;
+    height: 100%;
+}
+
+.agr{
+    font-size: 2rem;
+    color: red;
+    font-family: 'Croissant One', cursive;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+}
+
+.rule{
+    width: 500px;
+    height: 86%;
+    font-size: 1rem;
+    color: forestgreen;
+    font-family: 'Croissant One', cursive;
+    letter-spacing: 0.9px;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+
+.rule p{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+a{
+    text-decoration: none;
+    background-color: #059696;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}

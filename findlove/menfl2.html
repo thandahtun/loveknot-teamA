@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Men</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="./style2.css"/>
+		<link rel="stylesheet" type="text/css" href="./profile.css"/>
+		<style type="text/css">
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				scroll-behavior:smooth;
+			}
+
+			body{
+				height: 100vh;
+				width: 100%;
+				background-color: #FFF5E4;
+			}
+
+			#menfl{
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-direction: column;
+
+				margin-top: 75px;
+			}
+
+			h2{
+				font-size: 2rem;
+				letter-spacing: 2px;
+				color: #ff87ef;
+			}
+
+			.mfl1{
+				width: 100%;
+				height: 450px;
+
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+
+			#mfla{
+				width: 350px;
+				height: 400px;
+				background-color: #c2ede6;
+				border-radius: 20px;
+				box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.1);
+				transition: all 0.2s;
+
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			#mfla:hover{
+				background-color: #87fae5;
+				transform: translateY(-10px);
+			}	
+
+			img{
+				width: 200px;
+				height: 200px;
+				border-radius: 20px;
+				object-fit: cover;
+			}
+
+			.fa-message, .fa-square-xmark, .fa{
+				color:#ff87ef;
+				font-size: 2rem;
+				padding: 5px;
+				transition: all 0.2s;
+			}
+
+			 .fa-message:hover, .fa-square-xmark:hover, .fa:hover{
+				color: #ffec6e;	
+			}
+			
+			h3{
+				letter-spacing: 2px;
+				font-size: 1.5rem;
+				font-weight: 2px;
+			}
+
+			p{
+				letter-spacing: 1.5px;
+				font-weight: 2px;
+				/*text-align: justify;*/
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<section>
+			<nav>
+				<img class="heart" src="./img/loveknot.png" alt="heart"/>
+	
+				<div>
+					<ul class="menu">
+						
+						<li class="dropdown"><a href="../home/home2.html" class="home" >Home<i class="fa-solid fa-house "></i></a>
+	
+						<div class="dropdowncontent">
+							<a href="../home/home2.html" class="list">Trending</a>
+							<a href="../home/home2.html" class="list">Counseling</a>
+							  <a href="../home/home2.html" class="list">Love Quotes</a>
+	
+							
+						</div> </li> 
+	
+						<li><a href="../aboutus/aboutus2.html" class="aboutus">About Us<i class="fa-solid fa-people-group"></i></a></li>
+	
+						<li><a href="../contact/contact2.html" class="contact">Contact<i class="fa-solid fa-address-card"></i></a></li>
+						
+						<li><a href="../findlove/findlove2.html" class="findlove">Find Love<i class="fa-solid fa-magnifying-glass"></i></a>
+					</ul></li>
+				</div>
+	
+				<div class="profile">
+					<a href="#" class="profile1"> 
+						
+						MENU
+						<i class="fa-solid fa-bars"></i>
+	
+					   
+	
+					</a>
+					  <div class="darkmode">
+						<a href="#" id="mypf" >My Profile<i class="fa-solid fa-user"></i></a>
+							  
+	
+						<a href="./menfl.html" >Light Mode<i class="fa-solid fa-circle-half-stroke"></i></a>
+	
+						<a href="#">Setting<i class="fa-solid fa-gear"></i></a>
+	
+						<a href="../login/login.html">Log Out<i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+	
+					</div>
+	
+				</div>
+	
+			</nav>
+	
+		</section>
+	
+		<section id="pf">
+			<div id="profile">
+				<div class="menu1">
+					<h2>Profile</h2>
+					<div class="icon1">
+						<div class="icon">
+							<i class="fa-sharp fa-solid fa-gear"></i>
+						</div>
+						<div class="icon">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+						<div class="icon">
+							<a href="#" id="close"><i class="fa-solid fa-heart heart"></i></a>
+						</div>
+					</div>  
+				</div>
+				<div class="pro">
+					<div class="pro1">
+						<img src="img/profile.jpg" alt="Profile" />
+					</div>
+					<div>
+						<h3>Rose</h3>
+					</div>
+					<div class="pro2">
+						<img src="img/profile2.jpeg" alt="Profile2" />
+					</div>
+				</div>
+				<div class="shortcut">
+					<h3>All shortcuts</h3>
+					<div class="short">
+						<div class="short1">
+							<i class="fa-solid fa-user-group"></i>
+							<p>Friends</p>
+						</div>
+						<div class="short1">
+							<i class="fa-solid fa-people-roof"></i>
+							<p>Groups</p>
+						</div>
+					</div>
+					<div class="short">
+						<div class="short1">
+							<i class="fa-solid fa-phone"></i>
+							<p>Calls</p>
+						</div>
+						<div class="short1">
+							<i class="fa-sharp fa-solid fa-magnifying-glass-location"></i>
+							<p>People Nearby</p>
+						</div>
+					</div>
+					<div class="short">
+						<div class="short1">
+							<i class="fa-solid fa-bookmark"></i>
+							<p>Saved Messages</p>
+						</div>
+						<div class="short1">
+							<i class="fa-solid fa-user-plus"></i>
+							<p>Invite Friends</p>
+						</div>
+					</div>
+					<div class="short">
+						<div class="short1">
+							<i class="fa-solid fa-clock-rotate-left"></i>
+							<p>Memories</p>
+						</div>
+						<div class="short1">
+							<i class="fa-solid fa-calendar-days"></i>
+							<p>Events</p>
+						</div>
+					</div>
+					<div class="short">
+						<div class="short1">
+							<i class="fa-solid fa-flag"></i>
+							<p>Pages</p>
+						</div>
+						<div class="short1">
+							<i class="fa-sharp fa-solid fa-circle-question"></i>
+							<p>Love Knot Features</p>
+						</div>
+					</div>
+	
+				</div>
+				<div class="see">
+					<a href="#">See More</a>
+				</div>
+				<ul class="ul">
+					<li><a class="cmt" href="#"><i class="fa-solid fa-handshake-angle"></i></a></li>
+					<li>
+						<a class="cmt" href="#">Community resources &nbsp; <i class="fas fa-caret-down"></i></a>
+						<!-- <div class="dropdown1">
+							<ul>
+								<li><a class="cmt" href="#">COVID-19 Information Center</a></li>
+								<li><a class="cmt" href="#">Emotional Health</a></li>
+								<li><a class="cmt" href="#">Fundraisers</a></li>
+								<li><a class="cmt" href="#">Crisis Response</a></li>
+							</ul>
+						</div> -->
+					</li>
+				</ul>
+				<ul class="ul">
+					<li><a class="cmt" href="#"><i class="fa-sharp fa-solid fa-circle-question"></i></a></li>
+					<li>
+						<a class="cmt" href="#">Help & Support &nbsp; <i class="fas fa-caret-down"></i></a>
+						<!-- <div class="dropdown1">
+							<ul>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">Support Inbox</a></li>
+								<li><a href="#">Report A Problem</a></li>
+								<li><a href="#">Safety</a></li>
+								<li><a href="#">Terms & Policies</a></li>
+							</ul>
+						</div> -->
+					</li>
+				</ul>
+				<ul class="ul">
+					<li><a class="cmt" href="#"><i class="fa-sharp fa-solid fa-gear"></i></a></li>
+					<li>
+						<a class="cmt" href="#">Setting & Privacy &nbsp; <i class="fas fa-caret-down"></i></a>
+						<!-- <div class="dropdown1">
+							<ul>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Device requests</a></li>
+								<li><a href="#">Recent Ad Activity</a></li>
+								<li><a href="#">Find Wi-Fi</a></li>
+							</ul>
+						</div> -->
+					</li>
+				</ul>
+		
+				<div class="log">
+					<a href="../login/login.html">Log Out</a>
+				</div> 
+		</div>
+		</section> 
+	
+		<script type="text/javascript">
+			var mypf = document.getElementById('mypf');
+			var pf = document.getElementById('pf');
+			var close =document.getElementById('close');
+			// console.log(mypf);
+			mypf.addEventListener('click',function(){
+				pf.style.display='block';
+			});
+			close.addEventListener('click',function(){
+				pf.style.display='none';
+			});
+		</script> 
+	
+	
+	
+	
+
+		<section id="menfl">
+
+			<h2>Let's Meet the Single Men in Loveknot!</h2>
+
+			<div class="mfl1">
+
+				<div id="mfla">
+						<img src="imgfindlove/guyfl1.jpg" alt="guy1"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Liam, 21, Los Angeles</h3>
+						<p>Looking to have fun and meet some new people here!</p>
+				</div>
+
+				<div id="mfla">
+						<img src="imgfindlove/guyfl2.jpg" alt="guy2"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Noah, 23, New York</h3>
+						<p>Books, Movies, Hiking, Playing Chess, Music</p>
+				</div>
+				
+				<div id="mfla">
+					<img src="imgfindlove/guyfl3.jpg" alt="guy3"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Oliver, 28, London</h3>
+						<p>I just want to find a great person to enjoy an evening together.</p>
+				</div>
+				<div id="mfla">
+					<img src="imgfindlove/guyfl4.jpg" alt="guy4"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Elijah, 19, Ohio</h3>
+						<p>Let's drink together!</p>
+				</div>
+			</div>
+
+			<div class="mfl1">
+
+				<div id="mfla">
+					<img src="imgfindlove/guyfl5.jpg" alt="guy5"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Benjamin, 31, Washington</h3>
+						<p>I enjoy long walks and small talks with someone.</p>
+				</div>
+				<div id="mfla">
+					<img src="imgfindlove/guyfl6.jpg" alt="guy6"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Lucas, 27, Santiago</h3>
+						<p>Let's meet up!</p>
+				</div>
+				<div id="mfla">
+					<img src="imgfindlove/guyfl7.jpg" alt="guy7"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>James, 33, Louisiana</h3>
+						<p>Looking for a simple girl who can make me laugh.</p>
+				</div>
+				<div id="mfla">
+					<img src="imgfindlove/guyfl8.jpg" alt="guy8"/>
+						<div>
+							<a href="#"><i class="fa-solid fa-heart fa"></i></a>
+							<a href="#"><i class="fa-solid fa-message"></i></a>
+							<a href="#"><i class="fa-solid fa-square-xmark"></i></a>
+						</div>
+						<h3>Mike, 25, Canada</h3>
+						<p>I am looking for a serious relationship.</p>
+				</div>
+
+			</div>
+
+		</section>
+
+	</body>
+</html>

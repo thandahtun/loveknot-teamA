@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Login</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@700&family=Croissant+One&family=Monofett&family=Suranna&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Suranna", serif;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(70deg, #ed5c83, #fa9cf2);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lk {
+        width: 100%;
+        height: 100px;
+        /* background-color: #fa5b8b; */
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lk img {
+        width: 100px;
+        object-fit: cover;
+      }
+
+      .lk h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+
+      .fillbox {
+        width: 450px;
+        height: 500px;
+        background-color: #fffcfd6a;
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fillbox img {
+        width: 100px;
+        object-fit: contain;
+      }
+
+      .fillbox h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1.3px;
+        text-transform: capitalize;
+      }
+
+      .fillbox h3 {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      }
+
+      .fillbox .favicon {
+        width: 120px;
+        height: 70px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        transition: all 0.3s;
+      }
+
+      .fillbox .favicon .fa-facebook {
+        color: blue;
+      }
+
+      .fillbox .favicon .fa-square-twitter {
+        color: #3588fc;
+      }
+
+      .fillbox .favicon .fa-square-instagram {
+        color: #f55719;
+      }
+
+      .fa-facebook:hover {
+        text-shadow: 1px 1px 3px #00000090;
+      }
+
+      .fa-square-twitter:hover {
+        text-shadow: 1px 1px 3px #00000090;
+      }
+
+      .fa-square-instagram:hover {
+        text-shadow: 1px 1px 3px #00000090;
+      }
+
+      .ilabel {
+        cursor: pointer;
+      }
+
+      .ilabel label {
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+
+        margin: 0px 7px;
+      }
+
+      .ilabel .mail {
+        width: 250px;
+        height: 40px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgb(47, 46, 47);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+
+      .ilabel .mail::placeholder {
+        background-color: transparent;
+      }
+
+      .ilabel .mail:hover {
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+        border: 1px solid transparent;
+        border-bottom-width: 3px;
+      }
+
+      .mobileph {
+        margin: 15px 0px;
+        cursor: pointer;
+      }
+
+      .mobileph label {
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+
+        margin: 0px 7px;
+      }
+
+      .mobileph .numpo {
+        width: 250px;
+        height: 40px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgb(47, 46, 47);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+
+      .mobileph .numpo::placeholder {
+        background-color: transparent;
+      }
+
+      .mobileph .numpo:hover {
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+        border: 1px solid transparent;
+        border-bottom-width: 3px;
+      }
+
+      .fillbox a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #1a1919;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        padding: 1px 20px;
+        background-color: #fc144a90;
+        border-radius: 20px;
+        transition: all 0.3s;
+      }
+
+      .fillbox a:hover {
+        text-decoration: underline;
+        color: blue;
+        background-color: #8da7f7;
+        transform: translateY(1px);
+      }
+
+      footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 10px 0px;
+      }
+
+      footer p {
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lk">
+      <h1>Love knot</h1>
+    </div>
+    <div class="fillbox">
+      <img src="img/logio.png" alt="Loveknot" />
+
+      <h2>Login to your account</h2>
+      <h3>Login using with social network</h3>
+      <div class="favicon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+      <div class="ilabel">
+        <label for="egmail">Sign In with Email:</label>
+        <input
+          type="email"
+          name="gmail"
+          id="egail"
+          class="mail"
+          placeholder="Yours1023@gmail.com"
+          required
+        />
+      </div>
+
+      <div class="mobileph">
+        <label for="pno">Sign in with Ph.No:</label>
+        <input
+          type="text"
+          name="phnum"
+          id="pno"
+          class="numpo"
+          placeholder="Type Your Ph.Number"
+          required
+        />
+      </div>
+
+      <a href="../home/home.html">Sign In</a>
+      <footer>
+        <p>
+          Don't you have an account. <a href="../signup/signup.html" class="submit">Sign up here</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

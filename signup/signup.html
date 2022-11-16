@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="signup.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<title>SignUp</title>
+</head>
+<body>
+	<section class="st">
+		<div class="databox">
+			<div class="head">
+				<img src="logio.png" alt="love" /><p>love knot</p>
+			</div>
+		
+    		<div class="rname">
+    			<div class="all">
+    				<label for="firstname">First Name :</label>
+            		<input type="text" name="first" id="firstname" class="one" required autocomplete="off" placeholder="First Name"minlength="1" maxlength="16" />
+          		</div>
+    		
+
+    			<div class="all">
+    				<label for="lastname">Last Name :</label>
+            		<input type="text" name="second" id="lastname" class="two" required autocomplete="off" placeholder="Last Name" minlength="1"  maxlength="16" />	
+    			</div>
+    		</div>
+
+   		 	<div class="fname">
+    			<div class="displayname">
+    				<label for="dispalyname">Display name:</label>
+          			<input type="text"  name="nickname" id="displayname" class="name" placeholder="Display Name" required />
+				</div>
+    		</div>
+
+    		<div class="ga">
+    			<div class="all">
+    				<label for="gender">Gender</label>
+						<select name="gender" id="gender" class="">
+							<option disabled selected style="color: rosybrown;">Gender</option>
+							<option value="male" style="color: rosybrown;">Male</option>
+							<option value="female" style="color: rosybrown;">Female</option>
+							<option value="notsay" style="color: rosybrown;">Prefer not to say</option>
+						</select>
+            	    </div>
+
+                <div class="all">
+            		<label for="age">Age</label>
+            		<input type="number" name="age" id="age" class="" min="18" max="60"/>
+          		</div>
+    		</div>
+
+    		<div class="data">
+    			<div class="all">
+    				<label for="gmail">G-mail(or)Phone Number</label>
+            		<input type="text" name="gmail" id="gmail" class="" placeholder="G-mail (or) Ph-No." />
+    			</div>
+    			<div class="all">
+    				<label>Type New Password</label>
+    				<input type="password" name="password" id="id_password" class="" placeholder="Type New Password" >
+    				<i class="far fa-eye" id="togglePassword" style="margin: 0 -30px 0 -30px; cursor: pointer;"></i>
+    			</div>
+    			<div class="all">
+    				<label>Re-Type Password</label>
+ 					<input type="password" name="password" id="id_password" class="" placeholder="Type New Password" >
+    				<i class="far fa-eye" id="togglePassword" style="margin: 0 -30px 0 -30px; cursor: pointer;"></i>
+    			</div>
+    			</div>
+    			 </div>
+
+    		<div class="rg">
+    			<div class="agr">
+    				<p>User Aggrement</p>
+    			</div>
+    			<div class="rule">
+    				<p>1.Privacy Policy</p>
+    				<p>2.Types of personal data collected</p>
+    				<p>3.The use and share of the collected personal data</p>
+    				<p>4.Age restriction</p>
+    				<p>5.The rights of access and opt-out</p>
+    				<p>6.Mode and place of processing the personal data</p>
+    				<p>7.Retention time and deletion of personal data</p>
+    				<p>8.Changes to this privacy policy</p>
+    				<p>9.Data controller contact information</p>
+    				<p>10.Rights of EU users</p>
+    				<p>11.Rights of California users</p>
+    				<p>12.Acceptance of this privacy policy<p>
+    				<a href="../home/home.html">Continue and Agree</a>
+      			</div>
+      		</div>
+    <section>
+    		<script>
+    			const togglePassword = document.querySelector('#togglePassword');
+  				const password = document.querySelector('#id_password',);
+
+  				togglePassword.addEventListener('click', function (e) {
+    			// toggle the type attribute
+    			const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    			password.setAttribute('type', type);
+    			// toggle the eye slash icon
+    			this.classList.toggle('fa-eye-slash');
+				});
+			</script>
+
+</body>
+</html>

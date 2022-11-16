@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+
+	}
+
+nav{
+	width:100%;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*background: rgb(255,175,189);
+background: linear-gradient(317deg, rgba(255,175,189,1) 51%, rgba(255,195,160,1) 100%);*/
+
+/*background: rgb(255,175,189);
+background: linear-gradient(315deg, rgba(255,175,189,1) 31%, rgba(168,222,224,1) 79%);
+*/
+
+background: rgb(255,205,214);
+background: linear-gradient(315deg, rgba(255,205,214,1) 37%, rgba(178,239,241,1) 79%);
+
+
+/*background: rgb(255,205,214);
+background: linear-gradient(315deg, rgba(255,205,214,1) 37%, rgba(166,234,236,1) 79%);*/
+	border-radius: 50px;
+
+
+
+	font-family: 'Poppins', sans-serif;
+	z-index: 15;
+
+}
+
+nav::after{
+	    
+           content: "";
+           position: absolute;
+           inset: -0.1em;
+			background: rgb(255,205,214);
+			background: linear-gradient(315deg, rgba(255,205,214,1) 37%, rgba(178,239,241,1) 79%);
+
+
+			filter: blur(1em);
+            z-index: -1;
+        
+}
+
+nav img{
+	width: 75px;
+	height: 150%;
+	object-fit: cover;
+	border-radius: 40%;
+
+}
+
+
+nav .menu{
+ 	height: 100%;
+ 	width: 700px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ 
+
+
+	
+}
+
+nav .menu li{
+	list-style-type: none;
+	
+
+	
+}
+
+
+nav .menu li a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	
+	padding: 26px 26px 25px 26px;
+	transition: all 0.2s;
+	font-size: 1.1rem;
+
+	
+ 	
+ 	border-radius: 50px;
+	
+	
+	
+	
+	
+}
+
+nav .menu li a:hover{
+	
+	background-color: white;
+	border-radius: 0 50px;
+	font-weight: bolder;
+	
+
+}
+
+nav .menu li .home:hover{
+	color:#a0dcde;
+
+}
+
+nav .menu li .aboutus:hover{
+	color: #c7cdd4;
+}
+
+nav .menu li .contact:hover{
+	color:#e9bbc6;
+}
+
+
+nav .menu li .findlove:hover{
+	color: #ffb8bf;
+}
+
+
+nav .menu li a i{
+	margin-left: 5px;
+	font-size: 1.4rem;
+	
+	
+}
+
+nav .menu .dropdowncontent {
+	  display: none;
+	  position: absolute;
+	  margin:0;
+	  width: 140px;
+	  z-index: 2;
+	}
+
+.dropdowncontent .list{
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: /*#ffb8bf*/#b2eff1;
+   border-radius: 20px;
+   border:1px solid rgba(168,222,224,0.75);
+  
+  
+  font-size: 1rem;
+
+  transition-duration: 0.2s;
+  
+}
+
+.dropdowncontent .list:hover {
+	color: #a8dee0 ;
+	background-color: #ffff;
+	
+	font-weight: bolder;
+	 border:3px solid rgba(168,222,224,0.75);
+
+	border-radius: 50px;
+	box-shadow: 5px 2px 10px 3px rgba(168,222,224,0.75);
+
+	transform: translateX(-30px);
+
+	
+}
+
+
+
+
+
+.dropdown a{
+	display: inline-block;
+	
+}
+
+
+
+.dropdown:hover .dropdowncontent  {
+  display: block;
+
+}
+
+
+
+
+
+
+nav .profile a {
+	height: 100%;
+	
+	text-decoration: none;
+	color: white;
+
+	padding: 23px 45px;
+	border-radius: 50px;
+	font-size: 1.2rem;
+	display: inline-block;
+	transition: all 0.2s;
+
+	
+}
+
+
+
+
+nav .profile .profile1:hover{
+	color: #ffb8bf;
+	background-color: white;
+	font-weight: bolder;
+
+}
+
+nav .profile .fa-bars{
+	margin-left: 5px;
+	font-size: 1.5rem;
+}
+
+
+
+
+nav .darkmode{
+
+	 display: none;
+	  position: absolute;
+	  margin:0;
+	 
+	  z-index: 2;
+	  
+
+}
+
+nav .profile:hover .darkmode{
+	display: block;
+	
+	
+}
+
+
+nav .darkmode a{
+	 color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: #ffcdd6;
+   border-radius: 20px;
+   border:1px solid rgba(255,184,191,0.75);
+  
+  width: 160px;
+  font-size: 0.9rem;
+
+  transition-duration: 0.2s;
+  
+  
+  
+}
+
+nav .darkmode a:hover{
+	color: #ffb8bf ;
+	background-color: #ffff;
+	
+	font-weight: bolder;
+	 border:3px solid rgba(255,184,191,0.75);
+
+	border-radius: 50px;
+	box-shadow: 5px 2px 10px 3px rgba(255,184,191,0.75);
+
+	transform: translateX(-30px);
+
+
+
+
+}
+
+
+nav .darkmode i{
+	font-size: 1rem;
+	margin-left: 5px;
+}
+
+
